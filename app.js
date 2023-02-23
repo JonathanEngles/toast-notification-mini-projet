@@ -12,6 +12,9 @@ btn.addEventListener('click', () => {
     notification.classList.add('toast');
     notification.textContent = 'Vous avez bien cliqué!';
     contNot.appendChild(notification);
+    setTimeout(() => {
+        notification.classList.add('hide');
+    }, 1000);
     // ajout du timer pour faire disparaitre la notification
     setTimeout(() => {
         notification.remove();

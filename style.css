@@ -56,9 +56,16 @@ body {
 }
 
 .toast {
+    transition: opacity 1.5s;
     background-color: rgba(187, 148, 148, 0.8);
     padding: 0.6rem;
     margin: 0.6rem;
     border: 0.05em solid rgb(181, 181, 181);
     border-left: 0.1em solid red;
+   
+}
+
+.hide {
+   opacity: 0;
+   transition: opacity 1s;
 }
